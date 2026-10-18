@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#f7f7f8] text-ink font-sans;
+}
+
+body.dark {
+  @apply bg-night-bg text-[#f1eeeb];
+}
+
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}
